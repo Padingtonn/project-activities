@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+/*container*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1920px;
+    height: 1080px;
+
+    background:
+    url("../images/fonttoabout.jpg") center
+    no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro__inner{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Follow news*/
+.intro__suptitle{
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 52px;
+    color: white;
+    margin:0;
+}
+
+
+.intro__title{
+    font-size: 39px;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+}
+
+.intro__title:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 60px auto;
+}
+.intro__title__two{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.intro__title__two:after{
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 60px auto;
+}
+/*Header*/
+.header{
+    padding-top:30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    z-index: 1000;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color:black;
+}
+
+/*Nav*/
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+/*цвет у навигации*/
+.nav__link{
+    display:inline-block;
+    position: relative;
+    vertical-align: top; /*Чтобы шли в строку и был отступ между ними*/
+    margin:0 5px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.1s linear ;  /*Время перехода цвета*/
+}
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #1598ff;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity 0.1s linear;
+}
+/*При наведении меняется цвет*/
+.nav__link:hover{
+    color: white;
+}
+.nav__link:hover:after,
+.nav__link.active:after{
+    opacity: 1;
+}
+
+.nav__link.active{
+    color: white;
+}
+
+/*section*/
+.section{
+    padding: 80px 0 ;
+
+}
+.section__header{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+
+.section__suptitle{
+    font-size: 24px;
+    color: black;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.section__title{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+}
+
+.section__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+    background-color: coral;
+}
+
+.section__text{
+    font-size: 25px;
+    color: black;
+}
+
+/*section*/
+.section{
+    padding: 80px 0 ;
+}
+.section__header{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+
+.section__suptitle{
+    font-size: 24px;
+    color: black;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.section__title{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+}
+
+.section__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+    background-color: coral;
+}
+
+.section__text{
+    font-size: 25px;
+    color: black;
+}
+
+/*SERVICES --- 3 СТРАНИЦА       Тайм код 5:31*/
+.services{
+    display: flex;
+
+}
+
+
+.services__item{
+    flex: 1 1 0;
+    padding-right: 35px;
+    padding-left: 85px;
+    position: relative;
+}
+
+.services__icon{
+    position: absolute;
+    top: 0;
+    left: 28px;
+    z-index: 1;
+}
+
+
+.services__title{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+
+}
+
+.services__text{
+    font-size: 15px;
+    color: black;
+}
